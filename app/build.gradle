@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.donghwmount.xindelu"
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.donghwmount.xindelu"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
